@@ -1,236 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio</title>
-   <style>
-        body {
-            margin: 0;
-            background-color: lightpink;
-        }
-        .container {
-            width: 85%;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            min-height: 100vh;
-            border-radius: 10px;
-        }
-        </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-
-<center style="color:lightcoral; font-family: Georgia, 'Times New Roman', Times, serif;">
-
-<h1>Amira Abdelhamid Portfolio</h1>
-<p>Professional Wep Developer</p>
-</center>
-
-<br>
-<h2 style="color:lightpink">About Me</h2>
-<table border="0"; cellpadding="10"; cellspacing="0">
-<tr>
-<td><img src="images/pic profile.PNG"alt="pic profile" height="350"></td>
-<td> Hi, I’m Amira! <br> A passionate Web Developer.<br> I specialize in building modern, responsive, and user-centric websites that combine functionality with aesthetic appeal. <br> Currently expanding my toolkit to explore advanced web technologies and innovative design solutions. <br> Let’s create something beautiful together!
-<br>
-<h3 style="background:lightpink">Skills</h3>
-<ul>
-<li style="color:lightpink">HTML5</li>
-<li style="color:lightpink">CSS</li>
-<li style="color:lightpink">JAVASCRIPT</li>
-<li style="color:lightpink">REACT</li>
-<li style="color:lightpink">VUE.JS</li>
-</ul>
-</td>
-</tr>
-</table>
-<table border="0"; cellpadding="3"; cellspacing="0" style="align-items: center">
-
-<td><img src="images/facebook.JPG" alt="Facebook app" width="50"></td>
-<td><img src="images/linkedin.JPG" alt="Linkedin app" width="50"></td>
-<td><img src="images/instagram.JPG" alt="Instagram app" width="50"></td>
-<td><img src="images/github.jfif" alt="Github" width="50"></td>
-
-</tr> 
-<br>
-</table>
-<h2 style="color:lightpink" >Experience Timeline</h2>
-<table border="1"; cellpadding="10"; width="100%">
-<caption align="center" style="font-size: medium; font-weight: bold;">Proffesional Experience Overview</caption>
-<thead>
-<tr style="background:lightpink; color: aliceblue;">
-<th width="20%">Company</th>
-<th width="10%">Logo</th>
-<th width="30%">Role</th>
-<th width="30%">Key Achievements</th>
-<th width="20%">Dates</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td rowspan="2">Montessori Kids Academy</td>
-<td rowspan="2" align="center"><img src="images/teacher.png" width="100" alt="teacher"></td>
-<td> Faculty of Arts Gradute</td> 
-<td>
-<ul>
-<li>Demonstrated Excptional Patience</li>
-<li>Implemented creative teaching strageies that improved student engagement by 70%</li>
-<li>Maintained High Energy In Classrooms</li>
-</ul>
-</td>
-<td> sep 2020 - Present </td>
-</tr>
-<tr>
-<td>Arabic Language Teacher</td> 
-<td>
-<ul>
-<li>Academic Excellence & Student Progress</li>
-<li>Professional Leadership</li>
-</ul>
-</td>
-<td> 2021 - 2022</td>
-</tr>
-<tr>
-<td>White Eagle Event Company</td>
-<td align="center"><img src="images/assistant manager.JPG" alt="assistant manager" width="100"></td>
-<td>almentor Business</td>
-<td>
-<ul>
-<li>Calendar Management</li>
-<li>Meeting Management</li>
-<li>Communication</li>
-<li>project Support</li>
-
-</ul>
-</td>
-<td>2022 - 2023</td>
-</tr>
-<tr>
-<td> Web Developer</td>
-<td align="center"><img src="images/front dev.PNG" width="150" alt="front dev"></td>
-<td>junior web developer</td>
-<td>
-<ul>
-<li>Project Development</li>
-<li>Performance Optimization</li>
-<li>Self-Learning & Implementation</li>
-<li>Attention to Detail</li>
-</ul>
-</td>
-<td>Mar 2025 - Present</td>
-</tr>
-</tbody>
-<tfoot>
-<tr>
-<td colspan="5">Total Experience: 5+ Years of Professional Growth</td>
-</tr>
-</tfoot>
-</table>
-<br>
-<h2 style="color:lightpink">Contact Me</h2> 
-<p>Feel free to reach out to me using the links below. I'd love to hear from you!</p>
-<br>
-<form method="post">
-<fieldset>
-<legend>Personal Information</legend>
-<table border="0"; cellpadding="2"; cellspacing="0" width="70%">
-<tr>
-    <td><label for="name"> First Name: *</label>
-    <td><input id="name" type="text" name="name" required></td>
-    <td><label for="name"> Last Name: *</label></td>
-    <td><input id="name" type="text" name="name" required></td>
-    </tr>
-    <tr>
-        <td><label for="email">Email Address: *</label></td>
-        <td><input id="email" type="text" name="email" required></td>
-        <td><label for="number">Phone Number: *</label></td>
-        <td><input type="number" id="number" name="number" required></td>
-    </tr>
-    
-        <tr>
-        <td><label for="date">Preferred Meeting Date:</label></td>
-        <td><input id="date"type="date" value="mm/dd/yyyy" name="date" required></td>
-        <td><label for="time">Best Time to Contact:</label></td>
-        <td><input type="time" id="time" value="--:-- --" name="time" required></td>
-
-        </tr>
-</table>
-
-</fieldset>
-</form>
-<br>
-<form method="post">
-<fieldset>
-    <legend>Project Details</legend>
-<table border="0"; cellpadding="2"; cellspacing="0"width="60%">
-    <tbody>
-    <tr>
-        <td><label for="text">Project Type: * </label></td>
-        <td><input id="text" required name="text"
-         maxlength="7" minlength="4" required></td>
-         <td><label for="textarea">Project Description: * </label></td>
-            <td><textarea id="textarea" name="content" 
-             required rows="3" maxlength="30" required ></textarea></td>
-            </tr>
-            </tbody>
-           </table>
-            <table border="0"; cellpadding="2"; cellspacing="0" width="60%">
-                <tbody>
-        <tr>
-        <td> Budget Range:</td>
-        <td> Services Required (Check all that apply):</td>
-        <tr>
-        <td><input id="budget" type="radio" name="budget" required>
-            <label for="budget">Under $5.000</label></td>
-            <td><input id="serv" type="checkbox" name="serv" required>
-            <label for="serv">UI/UX Design</label></td>
-           </tr>
-            <tr>
-            <td><input id="budget" type="radio" name="budget" required>
-            <label for="budget">$5,000-$10,000</label></td>
-            <td><input id="serv" type="checkbox" name="serv" required>
-            <label for="serv">Frontend Development</label></td>
-        </tr>
-        <tr>
-        <td><input id="budget" type="radio" name="budget" required>
-            <label for="budget">$10,000-$25,000</label></td>
-            <td><input type="checkbox" name="serv" required>
-            <label for="serv">Backend Development</label></td>
-           </tr>
-            <tr>
-            <td><input id="budget" type="radio" name="budget" required>
-            <label for="budget">Over $25,000</label></td>
-            <td><input type="checkbox" name="serv" required>
-            <label for="serv">Hosting & Deployment</label></td> 
-            </tr>
-            <tr>
-                <td>
-                <br>
-                </td>
-            <td>
-            <input type="checkbox" name="serv" required>
-            <label for="serv">Maintenance & Support</label></td>
-            <tr>
-           <td>
-            <label for="relations">How did you hear about me ?</label>
-            <select id="relations" name="relations" value="--select source">
-            <option value="#">--select source</option>
-            <option value="#">Facebook</option>
-            <option value="#">Instagram</option>
-            <option value="#">Linkedin</option>
-            <option value="#">X</option>
-            <option value="#">Other</option>
-            </select>
-            </td>      
-            </tr>
-            </table>  
-</fieldset>
-<br>
-<button type="submit" style="color: white; background:rgb(88, 170, 197);">Send Massage</button>
-<button type="reset" style="color: white; background: rgb(196, 196, 120);">Clear Form</button>
-</form>
+        <div class="content"></div>
+        <h2>New Arrivals</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-</body>
+        <div class="all-cards">
+            <div class="card">
+            <div>
+            <img src="images/Teddy.jfif" alt="teddy">
+        </div>
+        <div>
+            <h3>View More Products</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div>
+        </div>
+        </div>
+            <div>
+            <img src="images/Teddy.jfif" alt="teddy">
+        </div>
+        </div>
+            <div>
+            <h3>View More Products</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <img src="images/Teddy.jfif" alt="teddy">
+        </div>
+        <div>
+            <h3>View More Products</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        </div>
 
+</body>
 </html>
