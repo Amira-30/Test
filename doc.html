@@ -53,9 +53,9 @@
 </thead>
 <tbody>
 <tr>
-<td>Montessori Kids Academy</td>
-<td align="center"><img src="images/teacher.png" width="100" alt="teacher"></td>
-<td>Bachelor of Arts Gradute</td> 
+<td rowspan="2">Montessori Kids Academy</td>
+<td rowspan="2" align="center"><img src="images/teacher.png" width="100" alt="teacher"></td>
+<td> Faculty of Arts Gradute</td> 
 <td>
 <ul>
 <li>Demonstrated Excptional Patience</li>
@@ -64,6 +64,16 @@
 </ul>
 </td>
 <td> sep 2020 - Present </td>
+</tr>
+<tr>
+<td>Arabic Language Teacher</td> 
+<td>
+<ul>
+<li>Academic Excellence & Student Progress</li>
+<li>Professional Leadership</li>
+</ul>
+</td>
+<td> 2021 - 2022</td>
 </tr>
 <tr>
 <td>White Eagle Event Company</td>
@@ -78,7 +88,7 @@
 
 </ul>
 </td>
-<td>2022-2023</td>
+<td>2022 - 2023</td>
 </tr>
 <tr>
 <td> Web Developer</td>
@@ -108,7 +118,7 @@
 <form method="post">
 <fieldset>
 <legend>Personal Information</legend>
-<table border="0"; cellpadding="2"; cellspacing="0">
+<table border="0"; cellpadding="2"; cellspacing="0" width="50%">
 <tr>
     <td><label for="name"> First Name: *</label>
     <td><input id="name" type="text" name="name" required></td>
@@ -137,58 +147,67 @@
 <form method="post">
 <fieldset>
     <legend>Project Details</legend>
-<table>
+<table border="0"; cellpadding="2"; cellspacing="0"width="45%">
     <tbody>
     <tr>
         <td><label for="text">Project Type: * </label></td>
         <td><input id="text" required name="text"
-         maxlength="7" minlength="4"></td>
-   
+         maxlength="7" minlength="4" required></td>
          <td><label for="textarea">Project Description: * </label></td>
             <td><textarea id="textarea" name="content" 
-             required rows="3" maxlength="10"></textarea></td>
+             required rows="3" maxlength="30" required ></textarea></td>
             </tr>
             </tbody>
            </table>
             <table>
+            <tbody>
         <tr>
         <td> Budget Range:</td>
+        <td> Services Required(Check all that apply):</td>
         <tr>
-        <td><input id="budget" type="radio" name="budget">
+        <td><input id="budget" type="radio" name="budget" required>
             <label for="budget">Under $5.000</label></td>
+            <td><input id="serv" type="checkbox" name="serv" required>
+            <label for="serv">UI/UX Design</label></td>
            </tr>
             <tr>
-            <td><input id="budget" type="radio" name="budget">
+            <td><input id="budget" type="radio" name="budget" required>
             <label for="budget">$5,000-$10,000</label></td>
+            <td><input id="serv" type="checkbox" name="serv" required>
+            <label for="serv">Frontend Development</label></td>
         </tr>
           <tr>
-        <td><input id="budget" type="radio" name="budget">
+        <td><input id="budget" type="radio" name="budget" required>
             <label for="budget">$10,000-$25,000</label></td>
+            <td><input type="checkbox" name="serv" required>
+                <label for="serv">Backend Development</label></td>
            </tr>
             <tr>
-            <td><input id="budget" type="radio" name="budget">
+            <td><input id="budget" type="radio" name="budget" required>
             <label for="budget">Over $25,000</label></td>
+            <td><input type="checkbox" name="serv" required>
+                <label for="serv">Hosting & Deployment</label></td>
             </tr>
             <tr>
             <td><label for="relations">How did you hear about me ?</label></td>
-            <td><select id="relations" name="relations">
+            <td><select id="relations" name="relations" required>
             <option value="facebook">--select source</option>
             <option value="facebook">Facebook</option>
             <option value="instagram">Instagram</option>
             <option value="linkedin">Linkedin</option>
             <option value="x">X</option>
             <option value="other">Other</option>
-
-            
             </select>
-    
             </td>
             </tr>
-    </table>
+         
+          </tbody>
+          </table>
 </fieldset>
 <br>
 <button type="submit" style="color: white; background: blue;">Send Massage</button>
 <button type="reset" style="color: white; background: red;">Clear Form</button>
 </form>
 </body>
+
 </html>
