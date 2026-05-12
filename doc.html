@@ -118,7 +118,7 @@
 <form method="post">
 <fieldset>
 <legend>Personal Information</legend>
-<table border="0"; cellpadding="2"; cellspacing="0" width="50%">
+<table border="0"; cellpadding="2"; cellspacing="0" width="60%">
 <tr>
     <td><label for="name"> First Name: *</label>
     <td><input id="name" type="text" name="name" required></td>
@@ -147,7 +147,7 @@
 <form method="post">
 <fieldset>
     <legend>Project Details</legend>
-<table border="0"; cellpadding="2"; cellspacing="0"width="45%">
+<table border="0"; cellpadding="2"; cellspacing="0"width="60%">
     <tbody>
     <tr>
         <td><label for="text">Project Type: * </label></td>
@@ -159,8 +159,8 @@
             </tr>
             </tbody>
            </table>
-            <table>
-            <tbody>
+            <table border="0"; cellpadding="2"; cellspacing="0" width="60%">
+                <tbody>
         <tr>
         <td> Budget Range:</td>
         <td> Services Required(Check all that apply):</td>
@@ -189,20 +189,19 @@
                 <label for="serv">Hosting & Deployment</label></td>
             </tr>
             <tr>
-            <td><label for="relations">How did you hear about me ?</label></td>
-            <td><select id="relations" name="relations" required>
-            <option value="facebook">--select source</option>
+           <td><label for="relations">How did you hear about me ?</label>
+           <select id="relations" name="relations">
+            <input type="text" id="text" name="text" required>
+           <option value="telegram">--select source</option>
             <option value="facebook">Facebook</option>
             <option value="instagram">Instagram</option>
             <option value="linkedin">Linkedin</option>
             <option value="x">X</option>
             <option value="other">Other</option>
             </select>
-            </td>
+          </td>
             </tr>
-         
-          </tbody>
-          </table>
+            </table>  
 </fieldset>
 <br>
 <button type="submit" style="color: white; background: blue;">Send Massage</button>
