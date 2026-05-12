@@ -1,10 +1,15 @@
-#cards{
-    display: inline-block;
-    width: 33.333%;
-    padding: 10px;
-}
 
-div img{
+    
+.card{
+    background: lightpink;
+    border-radius: 30px;
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+}
+    
+img{
     width: 100%;
-    display:block
+    border-radius: 30px;
+
 }
