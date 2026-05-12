@@ -5,14 +5,14 @@
 <title>Document</title>
 </head>
 <body>
-<center style="color:rgb(208, 66, 170); font-style:italic">
+<center style="color:rgb(208, 66, 170); font-family: sans-serif">
 
 <h1>Amira Abdelhamid Portfolio</h1>
 <p>Professional Wep Developer</p>
 </center>
 
 <br>
-<h1 style="color:rgb(208, 66, 170)">About Me</h1>
+<h2 style="color:rgb(208, 66, 170)">About Me</h2>
 <table border="0"; cellpadding="10"; cellspacing="0">
 <tr>
 <td><img src="images/pic profile.jfif"alt="pic profile" height="350"></td>
@@ -39,7 +39,7 @@
 </tr> 
 <br>
 </table>
-<h1 style="color:rgb(208, 66, 170)" >Experience Timeline</h1>
+<h2 style="color:rgb(208, 66, 170)" >Experience Timeline</h2>
 <table border="1"; cellpadding="10"; width="100%">
 <caption style="font-size: medium; font-weight: bold;">Proffesional Experience Overview</caption>
 <thead>
@@ -112,7 +112,7 @@
 </tfoot>
 </table>
 <br>
-<h1 style="color:rgb(208, 66, 170)">Contact Me</h1> 
+<h2 style="color:rgb(208, 66, 170)">Contact Me</h2> 
 <p>Feel free to reach out to me using the links below. I'd love to hear from you!</p>
 <br>
 <form method="post">
@@ -163,7 +163,7 @@
                 <tbody>
         <tr>
         <td> Budget Range:</td>
-        <td> Services Required(Check all that apply):</td>
+        <td> Services Required (Check all that apply):</td>
         <tr>
         <td><input id="budget" type="radio" name="budget" required>
             <label for="budget">Under $5.000</label></td>
@@ -180,27 +180,31 @@
         <td><input id="budget" type="radio" name="budget" required>
             <label for="budget">$10,000-$25,000</label></td>
             <td><input type="checkbox" name="serv" required>
-                <label for="serv">Backend Development</label></td>
+            <label for="serv">Backend Development</label></td>
            </tr>
             <tr>
             <td><input id="budget" type="radio" name="budget" required>
             <label for="budget">Over $25,000</label></td>
             <td><input type="checkbox" name="serv" required>
-                <label for="serv">Hosting & Deployment</label></td>
+            <label for="serv">Hosting & Deployment</label></td>
             </tr>
             <tr>
-           <td><label for="relations">How did you hear about me ?</label>
-           <select id="relations" name="relations">
-            <input type="text" id="text" name="text" required>
-           <option value="telegram">--select source</option>
-            <option value="facebook">Facebook</option>
-            <option value="instagram">Instagram</option>
-            <option value="linkedin">Linkedin</option>
-            <option value="x">X</option>
-            <option value="other">Other</option>
+           <td>
+            <label for="relations">How did you hear about me ?</label>
+            <select id="relations" name="relations" value="--select source">
+            <option value="#">--select source</option>
+            <option value="#">Facebook</option>
+            <option value="#">Instagram</option>
+            <option value="#">Linkedin</option>
+            <option value="#">X</option>
+            <option value="#">Other</option>
             </select>
-          </td>
+            </td>
             </tr>
+            <tr>
+                
+            </tr>
+
             </table>  
 </fieldset>
 <br>
