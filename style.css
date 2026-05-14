@@ -1,13 +1,9 @@
-
-    
-.card{
-    background: lightpink;
+.card{  
     border-radius: 30px;
     width: 30%;
-    display: flex;
-}
-    
-img{
+
+} 
+div img{
     width: 100%;
     border-radius: 30px;
 
