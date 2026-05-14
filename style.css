@@ -4,8 +4,7 @@
     background: lightpink;
     border-radius: 30px;
     width: 30%;
-    text-align: center;
-    display: inline-block;
+    display: flex;
 }
     
 img{
