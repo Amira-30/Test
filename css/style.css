@@ -1,0 +1,817 @@
+/* ==========================================================================
+   FITCORE GYM - MODERN DESIGN SYSTEM
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Precise Hex equivalents to Tailwind shades */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* Gray Scale */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+
+  /* Blue Theme (Premium Equipment) */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+
+  /* Emerald Theme (Expert Trainers) */
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+
+  /* Purple Theme (Flexible Hours) */
+  --color-purple-50: #f5f3ff;
+  --color-purple-100: #ede9fe;
+  --color-purple-200: #ddd6fe;
+  --color-purple-600: #7c3aed;
+  --color-purple-700: #6d28d9;
+
+  /* Slate Theme (Stats Bar) */
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+
+  /* Border Radii */
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Base & Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-gray-700);
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-gray-900);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+/* --- Layout Elements --- */
+.container {
+  width: 100%;
+  max-width: 1152px; /* Equivalent to max-w-6xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container.max-w-4xl {
+  max-width: 896px; /* Equivalent to max-w-4xl */
+}
+
+/* Padding utilities */
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-gray-50 {
+  background-color: var(--color-gray-50);
+}
+
+/* --- Grid System --- */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Section Description & Headers */
+.section-desc {
+  font-size: 1.25rem;
+  color: var(--color-gray-600);
+  line-height: 1.625;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+}
+
+h2 {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--color-gray-900);
+}
+
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+
+/* --- 1. Hero Section --- */
+.hero-div {
+  background: linear-gradient(135deg, var(--color-gray-50) 0%, var(--color-white) 100%);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3.75rem; /* text-6xl */
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--color-gray-900);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem; /* text-xl */
+  color: var(--color-gray-600);
+  line-height: 1.625;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* UI Component: Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.btn-black {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.btn-black:hover {
+  background-color: #1f2937;
+  border-color: #1f2937;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-gray-700);
+  border-color: var(--color-gray-300);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-gray-50);
+  border-color: var(--color-gray-400);
+  color: var(--color-gray-900);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 24rem; /* w-96 */
+  height: 24rem; /* h-96 */
+  border-radius: var(--radius-3xl);
+  object-fit: cover;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+
+/* --- 2. "Why Choose FitCore Gym" Section --- */
+.card {
+  border-radius: var(--radius-3xl);
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.card-blue {
+  background-color: var(--color-blue-50);
+  border-color: var(--color-blue-200);
+}
+
+.card-emerald {
+  background-color: var(--color-emerald-50);
+  border-color: var(--color-emerald-200);
+}
+
+.card-purple {
+  background-color: var(--color-purple-50);
+  border-color: var(--color-purple-200);
+}
+
+/* Card Icons */
+.icon-box {
+  width: 4rem; /* w-16 */
+  height: 4rem; /* h-16 */
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+}
+
+.bg-blue {
+  background-color: var(--color-blue-600);
+}
+
+.bg-emerald {
+  background-color: var(--color-emerald-600);
+}
+
+.bg-purple {
+  background-color: var(--color-purple-600);
+}
+
+.icon-shape {
+  background-color: var(--color-white);
+  transition: transform var(--transition-fast) ease;
+}
+
+.icon-square {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+}
+
+.icon-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.icon-rounded {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+.card h3 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.875rem; /* text-sm */
+  color: var(--color-gray-700);
+  line-height: 1.625;
+}
+
+/* Split Section: Image & Features */
+.split-image-col img {
+  width: 100%;
+  height: 20rem; /* h-80 */
+  border-radius: var(--radius-xl);
+  object-fit: cover;
+  display: block;
+}
+
+.split-content-col h3 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: 1.5rem;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-item {
+  border-left: 4px solid var(--color-black);
+  padding-left: 1.5rem;
+}
+
+.feature-item h4 {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600;
+  color: var(--color-gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  color: var(--color-gray-600);
+  font-size: 1rem;
+}
+
+
+/* --- 3. Testimonials & Reviews Section --- */
+.testimonial {
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  border: 1px solid transparent;
+  transition: transform var(--transition-normal);
+}
+
+.testimonial:hover {
+  transform: translateY(-4px);
+}
+
+.bg-blue-50 {
+  background-color: var(--color-blue-50);
+}
+
+.border-blue-200 {
+  border-color: var(--color-blue-200);
+}
+
+.bg-emerald-50 {
+  background-color: var(--color-emerald-50);
+}
+
+.border-emerald-200 {
+  border-color: var(--color-emerald-200);
+}
+
+.bg-purple-50 {
+  background-color: var(--color-purple-50);
+}
+
+.border-purple-200 {
+  border-color: var(--color-purple-200);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-header .avatar {
+  width: 4rem; /* w-16 */
+  height: 4rem; /* h-16 */
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.testimonial-header h4 {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.testimonial-header .subtext {
+  font-size: 1rem;
+  color: var(--color-gray-600);
+}
+
+.testimonial .quote {
+  font-size: 1rem;
+  color: var(--color-gray-700);
+  line-height: 1.625;
+}
+
+/* Stats Bar */
+.stats-bar {
+  border-radius: var(--radius-3xl);
+  padding: 3rem;
+  text-align: center;
+  border: 1px solid var(--color-slate-200);
+  background-color: var(--color-slate-100);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-num {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--color-gray-600);
+  font-size: 1rem;
+}
+
+
+/* --- 4. Membership Form Section --- */
+.form-container {
+  border-radius: var(--radius-3xl);
+  padding: 3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: block;
+  color: var(--color-gray-700);
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-lg);
+  font-size: 1.125rem; /* text-lg */
+  font-family: inherit;
+  color: var(--color-gray-900);
+  background-color: var(--color-white);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-control::placeholder {
+  color: var(--color-gray-400);
+}
+
+.form-control:focus {
+  border-color: var(--color-black);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
+}
+
+.select-control {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.5rem center;
+  background-size: 1.25rem;
+  appearance: none;
+  padding-right: 3rem;
+}
+
+.textarea-control {
+  height: 6rem;
+  resize: none;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  border-radius: var(--radius-lg);
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-submit:hover {
+  background-color: #1f2937;
+}
+
+.form-footer-text {
+  color: var(--color-gray-600);
+  font-size: 0.875rem; /* text-sm */
+}
+
+
+/* --- 5. Footer Section --- */
+#footer {
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+}
+
+.footer-logo {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer-desc {
+  color: var(--color-gray-400);
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.625;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.social-links a {
+  color: var(--color-gray-400);
+  cursor: pointer;
+}
+
+.social-links a:hover {
+  color: var(--color-white);
+}
+
+.footer-heading {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  color: var(--color-gray-400);
+  cursor: pointer;
+}
+
+.footer-links a:hover {
+  color: var(--color-white);
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-block h5 {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.contact-block p, 
+.contact-block a {
+  color: var(--color-gray-400);
+}
+
+.contact-block a:hover {
+  color: var(--color-white);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid var(--color-gray-700);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright-text {
+  color: var(--color-gray-500);
+  font-size: 0.875rem; /* text-sm */
+}
+
+.meta-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.meta-links a {
+  color: var(--color-gray-500);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.meta-links a:hover {
+  color: var(--color-white);
+}
+
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+
+/* Col spans */
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+/* Tablet viewports (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile landscape and down (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Grids collapse to single columns */
+  .grid-cols-2,
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Stats grid is 2x2 on tablet/mobile */
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Footer column spans collapse */
+  .col-span-2 {
+    grid-column: span 1 / span 1;
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Hero adjustments */
+  .hero-div {
+    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 24rem;
+    height: 20rem;
+  }
+
+  /* Split layout image on top, features on bottom */
+  .grid-cols-2.gap-12 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .split-image-col, 
+  .split-content-col {
+    width: 100%;
+  }
+
+  /* Form Container padding adjustments */
+  .form-container {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Footer adjustments */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .meta-links {
+    justify-content: center;
+  }
+}
+
+/* Tiny mobile portrait viewports (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-bar {
+    padding: 2rem 1rem;
+  }
+}
