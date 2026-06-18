@@ -1,0 +1,60 @@
+.parent{
+    display: grid;
+    height: 300px;
+    grid-template-areas: 
+    "header header header main main main main main main sidebare sidebar sider"
+    "footer footer footer hmada hmada amira amira shosho shosho sidebar sidebar sidebar"
+    ;
+    grid-template-rows: 50vh 50vh;
+}
+div img{
+    height:100%;
+}
+.head{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
+}
+.hmada{
+    grid-area: hmada;
+}
+.amira{
+    grid-area: amira;
+}
+.shosho{
+    grid-area: shosho;
+}
+
+img{
+    width: 200px;
+    transform: rotateY('180deg');
+    animation: care;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+}
+
+@keyframes care{
+    0%{
+        left:0;
+    }
+    50%{
+        left:800px;
+        transform: rotateY('180deg');
+    }
+    51%{
+        transform: rotateY('380deg');
+    }
+100%{
+    left: 0;
+    transform: rotateY('380deg');
+}
+}
