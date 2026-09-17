@@ -778,6 +778,9 @@ body {
 .custom-select.active {
   border-color: var(--color-primary);
 }
+.font{
+  color: white;
+}
 
 .custom-options {
   position: absolute;
