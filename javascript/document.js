@@ -21,3 +21,8 @@ if( a = 5){
 }
 
 
+console.log(m);
+
+var m = 10;
+
+

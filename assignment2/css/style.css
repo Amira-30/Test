@@ -1,0 +1,453 @@
+/* ====================== start general style ===============================  */
+body {
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 15px 0;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.container {
+  margin-inline: 32.333px;
+}
+.section {
+  padding: 60px 24px 0 24px;
+}
+.section-header {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+  padding-block: 20px;
+}
+.section-image.float-right img {
+  width: 400px;
+  height: auto;
+}
+.header-h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-block: 10px;
+  text-align: center;
+}
+.header-p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-block: 30px;
+}
+
+
+/* ====================== end general style ===============================  */
+
+/* ====================== start section hero ===============================  */
+.hero-section {
+  padding-block: 100px;
+}
+.section-info {
+  width: 50%;
+}
+.section-info h1 {
+  margin-top: -20px;
+  font-size: 60px;
+  padding-right: 100px;
+  font-weight: 700;
+  line-height: 75px;
+  color: #0f172a;
+}
+.section-info p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-block: 40px;
+}
+.section-image {
+  width: 40%;
+  margin-inline: 5%;
+  text-align: center;
+}
+.section-image img {
+  width: 83%;
+  border-radius: 18px;
+  text-align: center;
+}
+.btn1,
+.btn2 {
+  padding: 20px 30px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.btn1 {
+  background-color: black;
+  color: #ffffff;
+}
+.btn2 {
+  border: #d1d5dc 3px solid;
+  background-color: transparent;
+  margin-left: 10px;
+}
+/* ====================== end section hero ===============================  */
+
+/* ====================== start section two ===============================  */
+
+
+.card {
+  width: 32%;
+  border-radius: 15px;
+  height: 270px;
+  text-align: center;
+}
+.card1 {
+  background-color: #dbeafe;
+}
+.card2 {
+  background-color: #d0fae5;
+  margin-inline: 2%;
+}
+.card3 {
+  background-color: #f3e8ff;
+}
+.shape {
+  width: 60px;
+  height: 60px;
+  background-color: #155dfc;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+  overflow: auto;
+}
+.inline-shape {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 15px;
+}
+.shape2 {
+  background-color: #009966;
+  border: 1px solid #d9e0ea;
+}
+.shape3 {
+  background-color: #9810fa;
+  border: px solid #d9e0ea;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.card-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-info p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-block: 20px;
+  line-height: 23px;
+}
+.section-two-content {
+  padding-block: 100px;
+}
+.section-two-content-image {
+  width: 50%;
+  float: left;
+}
+.section-two-content::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.more-than-section {
+  width: 45%;
+  margin-left: 5%;
+  float: left;
+}
+.more-than-section h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.section-two-content-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+.morethan-subsection {
+  border-left: #0f172a 4px solid;
+  margin-block: 25px;
+}
+.morethan-subsection-data {
+  padding-inline: 20px;
+}
+.morethan-subsection-data h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.morethan-subsection-data p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+/* ====================== end section two ===============================  */
+
+/* ====================== start section three ===============================  */
+.What-Our-Members-Say {
+  background-color: #f9fafb;
+}
+.card-info {
+  margin-block: 30px;
+}
+.image-info,
+.card-p {
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 20px;
+  text-align: left;
+
+  
+}
+
+.card-info-image {
+  width: 70px;
+  margin-right: 12px;
+  margin-left: 0;
+}
+.container-card {
+  margin-inline: 20px;
+  border-radius: 30px;
+}
+.section-two-content-image img{
+    width: 80%;
+
+}
+.card-info-image img {
+  width: 100%;
+  border-radius: 90%;
+}
+.card1-section3 {
+  background-color: #eff6ff; 
+  
+  
+   
+}
+.card2-section3 {
+  background-color: #ecfdf5;
+  border-radius: 20px;
+  margin-inline: 2%;
+}
+.card3-section3 {
+  background-color: #faf5ff;
+
+}
+.image-card-info {
+  margin-top: 10px;
+}
+.image-card-info h4 {
+  font-size: 18px;
+}
+.image-card-info p {
+  font-size: 16px;
+  margin-block: 0;
+}
+.card-p {
+  font-size: 16px;
+  line-height: 26px;
+}
+.section-content-numbers {
+  background-color: #f1f5f9;
+  margin-top: 100px;
+  border-radius: 15px;
+}
+.cards-numbers {
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.cord-number {
+  width: 25%;
+  height: 180px;
+}
+.cord-number h3 {
+  margin-top: 50px;
+  font-size: 36px;
+}
+/* ====================== end section three ===============================  */
+/* ====================== start section form ===============================  */
+.container-form {
+  width: 70%;
+  background-color: #f9fafb;
+  padding: 48px;
+  border-radius: 12px;
+  margin: auto;
+}
+.first-name,
+.last-Name {
+  width: 50%;
+}
+.container-form label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.container-form input , select ,textarea{
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 14px;
+  border: 1px solid #d9e0ea;
+  color: #334155;
+  margin-block: 14px;
+  resize: none;
+  background-color: transparent;
+}
+
+.first-last-name input {
+  width: 95%;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 14px;
+  border: 1px solid #d9e0ea;
+  color: #334155;
+  margin-block: 14px;
+}
+.last-Name input {
+  width: 100%;
+}
+.div-button{
+    margin-block: 15px;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+.join-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.button-p{
+    text-align: center;
+    color: #4a5565;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* ====================== end section form ===============================  */
+
+/* ====================== start section footer ===============================  */
+.footer{
+    background-color: #101828;
+    padding-block: 80px;
+    color: #99a1af;
+}
+.footer-1{
+    margin-bottom: 48px;
+}
+.footer-2{
+    border-top: 1px solid #4a5565;
+    padding-top: 32px;
+}
+.footer-div1 {
+    width: 50%;
+}
+.footer-div2 ,.footer-div3{
+    width: 23%;
+
+}
+.footer-div2{
+    margin-inline: 2%;
+}
+.footer-div1-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+}
+.footer-div1-content p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #99a1af;
+}
+.footerlist{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+.footerlist li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #99a1af;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.footerlist li{
+    margin-bottom: 12px;
+}
+.footer-div2-content,.footer-div3-content h3{
+        font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #fff;
+}
+
+.footer-div3-content,.footer-div3-phone,.footer-div3-hours h4{
+            font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.footer-div3-content,.footer-div3-phone p , a{
+            font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #99a1af;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.right-list,.left-list{
+    margin-block: 0;
+    color: #6a7282;
+        font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+.right-list li{
+    list-style: none;
+}
+.right-list li a{
+        margin-right: 20px;
+    text-decoration: none;
+    color: #6a7282;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* ====================== end section footer ===============================  */
